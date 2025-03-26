@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Inventarios - Bodega</title>
+   
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="text-align: center;">Gestión de Inventarios - Bodega</h2>
+        <label>Producto:</label>
+        <select id="producto">
+            <option value="Detergente en polvo">Detergente en polvo (454 g)</option>
+            <option value="Detergente liquido">Detergente liquido (454 g)</option>
+            <option value="Escobas">Escobas</option>
+            <option value="Trapeadores">Trapeadores</option>
+            <option value="Cepillo">Cepillo</option>
+            <option value="Desinfectante Galon">Desinfectante Galón</option>
+            <option value="Jabon de manos litro">Jabón de manos litro</option>
+            <option value="Jabon  de barra">Jabón de barra</option>
+            <option value="Pastillas de baño">Pastillas de baño</option>
+            <option value="Cloro">Cloro</option>
+            <option value="Esponjas">Esponjas</option>
+            <option value="Toallas excervecentes">Toallas exvercesentes</option>
+            <option value="Acondicionadores de ropa ">Acondicionadores de ropa</option>
+            <option value="Aromatizantes de ambiente">Aromatizantes de ambiente</option>
+            <option value="Desinfectantes de ambientes y superficies">Desinfectantes de ambientes y superficies</option>
+        </select>
+        <label>Cantidad:</label>
+        <input type="number" id="cantidad" placeholder="Cantidad">
+        <br>
+        <label>Precio Unitario:</label>
+        <input type="number" id="precio" placeholder="Precio unitario">
+        <label>Encargado de la entrega:</label>
+        <input type="text" id="encargado" placeholder="Nombre del encargado">
+        <br>
+        <label>Empleado que recibe:</label>
+        <input type="text" id="empleado" placeholder="Nombre del empleado">
+        <button onclick="agregarTransaccion()">Registrar</button>
+
+        <table >
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio Unitario</th>
+                    <th>Total</th>
+                    <th>Encargado</th>
+                    <th>Recibe</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-body">
+            </tbody>
+        </table>
+        <p class="total">Total de productos entregados: <span id="totalCantidad">0</span></p>
+    </div>
+
+    <script src="App.Js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

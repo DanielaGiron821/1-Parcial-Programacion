@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="color: white;">Analisis de venta de Gestion de equipos tecnologicos</title>
+</head>
+<body>
+    <body background="https://img.lovepik.com/background/20211022/large/lovepik-technological-background-image_402009667.jpg" width="50%" >
+        
+    </body>
+    <h2 style="text-align: center; color: white;">Inventario de equipos tecnologicos</h2>
+    
+    <label for="producto" style="color: white;">Producto</label>
+    <input type="text" id="producto" placeholder="Nombre de producto" style="background-color: rgb(255, 214, 201);">
+
+    <label for="codigo" style="color: white;">Codigo</label>
+    <input type="number" id="codigo" placeholder="Codigo de producto" style="background-color: rgb(255, 214, 201);">
+    <button onclick="buscarProducto()" style="background-color: rgb(245, 117, 181);">Buscar Producto</button>
+
+    <label for="compra" style="color: white;">Compras</label>
+    <input type="number" id="compra" placeholder="Cantidad de compra" style="background-color: rgb(255, 214, 201);">
+
+    <label for="venta" style="color: white;">Ventas</label>
+    <input type="number" id="venta" placeholder="Cantidad de venta" style="background-color: rgb(255, 214, 201);">
+    
+    <label for="fecha" style="color: white;">Fecha</label>
+    <input type="date" id="fecha" style="background-color: rgb(255, 214, 201);">
+    <br><br>
+
+
+    <button onclick="cargarProducto()" style="background-color: rgb(245, 117, 181);">Guardar Producto</button>
+    
+    <button onclick="actualizarProducto()" style="background-color: rgb(245, 117, 181);">Actualizar Producto</button>
+    
+    <button onclick="eliminarProducto()" style="background-color: rgb(245, 117, 181);">Eliminar Producto</button>
+    <br><br>
+
+    <table border="1px" id="mostrarInventario" width="100%" style="background-color:rgb(245, 117, 181) ;">
+        <thead>
+            <tr>
+                <th style="color: white;">Producto</th>
+                <th style="color: white;">Codigo</th>
+                <th style="color: white;">Compras</th>
+                <th style="color: white;">Ventas</th>
+                <th style="color: white;">Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+       
+    </table>
+    
+    <script src="App.Js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

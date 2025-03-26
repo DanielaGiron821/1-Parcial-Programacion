@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglo</title>
+</head>
+
+<body>
+    
+ <label for="nombre">Ingrese su Nombre</label>
+  <input type="text" id="nombre"><br><br>
+ 
+
+  <label for="identidad">Ingrese su Identidad</label>
+  <input type="text" id="identidad" placeholder="Ingrese su Identidad">
+  <button onclick="buscarEstudiante()">Buscar Estudiante</button>
+  <br><br>
+ 
+
+  <label for="edad">Ingrese su Edad</label>
+  <input type="text" id="edad"><br><br>
+
+
+  <label for="carrera">Ingrese su Carrera</label>
+  <input type="text" id="carrera"><br><br>
+  <button onclick="cargarArreglo()">Guardar Estudiante</button>
+  <button onclick="actualizarEstudiante()">Actualizar Estudiante</button>
+  <button onclick="eliminarEstudiante()">Eliminar Estudiante</button>
+  
+  <br><br>
+  
+  
+  <table id="mostrarEstudiantes" border="1px" width="50%">
+      <thead>
+          <tr>
+              <th>Nombre</th>
+              <th>Identidad</th>
+              <th>Edad</th>
+              <th>Carrera</th>
+          </tr>
+      </thead>
+      <tbody>
+      </tbody>
+  </table>
+
+
+
+
+ <script src="app.Js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ 
+    
+</body>
+</html>
